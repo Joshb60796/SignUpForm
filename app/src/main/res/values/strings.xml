@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SignUpForm</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="usernameField">Username:</string>
+    <string name="usernameEditField">Please enter your username</string>
+    <string name="confirmField">Confirm:</string>
+    <string name="confirmEditField">Please confirm password</string>
+    <string name="passwordField">Password:</string>
+    <string name="passwordEditField">Please enter your password</string>
+    <string name="submitButton">SUBMIT</string>
+
+
+</resources>

@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+
+
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/username_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:text="@string/usernameField"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/usernameEditField"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/username_field"
+            android:layout_weight="70"
+            android:hint="@string/usernameEditField" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/password_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username_field"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/passwordField"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:text="@string/passwordField"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/passwordEditField"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/passwordField"
+            android:layout_weight="70"
+            android:hint="@string/passwordEditField" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/confirm_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_field">
+
+        <TextView
+            android:id="@+id/confirmField"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:text="@string/confirmField"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/confirmEditField"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/username_field"
+            android:layout_weight="70"
+            android:hint="@string/confirmEditField" />
+    </LinearLayout>
+
+    <Button
+
+        android:id="@+id/submitButton"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/username_field"
+        android:layout_below="@+id/confirm_field"
+        android:text="@string/submitButton"
+        android:textSize="20sp" />
+
+</RelativeLayout>
